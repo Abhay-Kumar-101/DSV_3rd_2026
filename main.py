@@ -33,6 +33,7 @@ df = df.dropna(subset=['price', 'minimum_nights'])
 
 # Step 4: Create Dash application
 app = Dash(__name__)
+server = app.server
 
 # Step 5: Create layout
 app.layout = html.Div([
